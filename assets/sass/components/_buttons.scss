@@ -1,0 +1,19 @@
+.active{
+    color: $gray-clr;
+}
+
+.btn{
+    background-color: $green-clr;;
+    color: $white-clr;
+    padding: 12px 28px;
+    display: inline-block;
+    border-radius: 20px 0 20px;
+    margin-top: 46px;
+}
+
+.btn-sing{
+    background-color: $main-clr;
+    padding: 5px 19px;
+    border-radius: 15px 0 15px;
+    margin: 0;
+}

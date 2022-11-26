@@ -2,9 +2,7 @@ header{
     margin-top: 33px;
 
     .header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include align(space-between);
 
         .logo{
             width: 151px;
@@ -16,19 +14,14 @@ header{
 
         ul{
             display: flex;
+            align-items: center;
 
             li{
                 margin: 0 15px;
+                font-weight: 600;
 
                 &:last-child{
-                    margin: 0 0 0 30px;
-
-                    a{
-                        background-color: $main-clr;
-                        color: $white-clr;
-                        padding: 6px 15px;
-                        border-radius: 15px 0 15px;
-                    }
+                    margin: 0 0 0 30px;                    
                 }
                 
             }

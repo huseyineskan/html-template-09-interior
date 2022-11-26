@@ -11,3 +11,55 @@ body{
 h2{
     font-family: 'Poppins', sans-serif;
 }
+
+section{
+    margin-top: 40px;
+
+    .content{
+        @include align;
+        gap: 40px;
+
+        .text{
+            max-width: 606px;
+
+            span{
+                font-size: 20px;
+                color: $gray-clr;
+                font-weight: 600;
+            }
+
+            h1{
+                font-size: 72px;
+                line-height: 78px;
+            }
+
+            p{
+                margin-top: 23px;
+                color: $gray-clr;
+            }
+        }
+
+        .image{
+            width: 751px;
+            max-width: 751px;
+            border-radius: 140px 0 140px;
+            position: relative;
+
+            img{
+                width: 100%;
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                right: -30px;
+                bottom: -30px;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                border: 5px solid $main-clr;
+                border-radius: 140px 0 140px;
+            }
+        }
+    }
+}
