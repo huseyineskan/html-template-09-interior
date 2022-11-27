@@ -73,7 +73,8 @@ h2 {
 }
 
 section {
-  margin-top: 40px;
+  position: relative;
+  padding: 100px 0;
 }
 
 section .content {
@@ -132,6 +133,113 @@ section .content .image::before {
   border-radius: 140px 0 140px;
 }
 
+section.services .container span {
+  font-size: 20px;
+  color: #646464;
+  font-weight: 600;
+}
+
+section.services .container h2 {
+  font-size: 48px;
+  line-height: 78px;
+  font-weight: 500;
+}
+
+section.services .container .services-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 37px;
+  margin-top: 60px;
+  position: relative;
+}
+
+section.services .container .services-boxes .service-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40px auto;
+      grid-template-columns: 40px auto;
+  padding: 40px 22px;
+  gap: 20px;
+  border-radius: 60px 0 60px;
+  -webkit-box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+          box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+}
+
+section.services .container .services-boxes .service-box .icon img {
+  width: 100%;
+}
+
+section.services .container .services-boxes .service-box h2 {
+  font-size: 24px;
+}
+
+section.services .container .services-boxes .service-box p {
+  font-size: 18px;
+  color: #646464;
+  line-height: 27px;
+}
+
+section.services .container .services-boxes .service-arrows {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+section.services .container .services-boxes .service-arrows span {
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+          box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.services .container .services-boxes .service-arrows span:hover {
+  cursor: pointer;
+}
+
+section.services .container .services-boxes .service-arrows span.active {
+  background-color: #37806B;
+  color: #ffffff;
+}
+
+section .bg-pattern {
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+section:nth-child(even) .bg-pattern {
+  right: auto;
+  left: 0;
+}
+
 .active {
   color: #646464;
 }
@@ -143,6 +251,8 @@ section .content .image::before {
   display: inline-block;
   border-radius: 20px 0 20px;
   margin-top: 46px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .btn-sing {
@@ -150,5 +260,7 @@ section .content .image::before {
   padding: 5px 19px;
   border-radius: 15px 0 15px;
   margin: 0;
+  font-weight: 600;
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
