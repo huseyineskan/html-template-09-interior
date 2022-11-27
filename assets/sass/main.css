@@ -126,6 +126,7 @@ section .content .image {
 
 section .content .image img {
   width: 100%;
+  border-radius: 140px 0 140px;
 }
 
 section .content .image::before {
@@ -161,7 +162,7 @@ section .bg-pattern {
           user-select: none;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -50px;
 }
 
 section:nth-child(even) .bg-pattern {
