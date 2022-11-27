@@ -34,9 +34,16 @@ section{
                 line-height: 78px;
             }
 
+            h2{
+                font-size: 48px;
+                line-height: 57px;
+            }
+
             p{
                 margin-top: 23px;
                 color: $gray-clr;
+                font-size: 18px;
+                line-height: 34px;
             }
         }
 
@@ -62,9 +69,38 @@ section{
                 border-radius: 140px 0 140px;
             }
         }
+
+        &.rtl{
+            flex-direction: row-reverse;
+            gap: 100px;
+            
+            .image{
+                &::before{
+                    left: -30px;
+                    top: -30px;
+                }
+            }
+        }
+    }
+
+    .bg-pattern{
+        z-index: -1;
+        user-select: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:nth-child(even){
+        .bg-pattern{
+            right: auto;
+            left: 0;
+        }
     }
 
     &.services{
+        padding: 50px;
+
         .container{
             span{
                 font-size: 20px;
@@ -137,20 +173,10 @@ section{
                 }
             }
         }
-    }
 
-    .bg-pattern{
-        z-index: -1;
-        user-select: none;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
-    &:nth-child(even){
         .bg-pattern{
-            right: auto;
-            left: 0;
+            bottom: -120px;
         }
     }
+
 }
