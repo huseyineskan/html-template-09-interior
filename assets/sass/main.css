@@ -234,44 +234,6 @@ section.services .container .services-boxes .service-box p {
   line-height: 27px;
 }
 
-section.services .container .services-boxes .service-arrows {
-  position: absolute;
-  top: -50px;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-
-section.services .container .services-boxes .service-arrows span {
-  width: 30px;
-  height: 30px;
-  -webkit-box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
-          box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
-  border-radius: 50%;
-  font-family: 'Poppins', sans-serif;
-  font-size: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-section.services .container .services-boxes .service-arrows span:hover {
-  cursor: pointer;
-}
-
-section.services .container .services-boxes .service-arrows span.active {
-  background-color: #37806B;
-  color: #ffffff;
-}
-
 section.services .bg-pattern {
   bottom: -120px;
 }
@@ -339,6 +301,130 @@ section.complete-work .content .counters .counter-box p {
 section.complete-work .content .counters .counter-box span {
   font-size: 18px;
   font-weight: 600;
+}
+
+section.testimonials .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.testimonials .content .text {
+  max-width: 100%;
+  text-align: center;
+}
+
+section.testimonials .content .test-boxes {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+section.testimonials .content .test-boxes .test-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.testimonials .content .test-boxes .test-box .test-img {
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 130px;
+  max-height: 130px;
+  border-radius: 40px 0 40px;
+  position: relative;
+  left: 65px;
+}
+
+section.testimonials .content .test-boxes .test-box .test-img img {
+  width: 100%;
+  height: 100%;
+}
+
+section.testimonials .content .test-boxes .test-box .test-text {
+  width: calc(100% - 65px);
+  padding: 41px 41px 41px 90px;
+  border-radius: 70px 0 70px;
+  height: 226px;
+  -webkit-box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+          box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+}
+
+section.testimonials .content .test-boxes .test-box .test-text p {
+  font-size: 18px;
+  line-height: 28px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+section.testimonials .content .test-boxes .test-box .test-text p.test-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+
+section.testimonials .content .test-boxes .test-box .test-text p.test-name span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+section.testimonials .content .test-boxes .test-box .test-text p.test-name::before {
+  content: "\"";
+  position: absolute;
+  font-size: 100px;
+  line-height: 72px;
+  color: #B0855B;
+  right: 0;
+}
+
+.slide-arrows {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.slide-arrows span.arrow {
+  width: 30px;
+  height: 30px;
+  -webkit-box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+          box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+  border-radius: 50%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slide-arrows span.arrow:hover {
+  cursor: pointer;
+}
+
+.slide-arrows span.arrow.active {
+  background-color: #37806B;
+  color: #ffffff !important;
 }
 
 .active {
