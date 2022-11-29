@@ -117,6 +117,13 @@ section .content .text p {
   line-height: 34px;
 }
 
+section .content .text p.bold-text {
+  font-size: 48px;
+  line-height: 57px;
+  color: #212121;
+  font-weight: 500;
+}
+
 section .content .image {
   width: 751px;
   max-width: 751px;
@@ -155,14 +162,14 @@ section .content.rtl .image::before {
 }
 
 section .bg-pattern {
-  z-index: -1;
+  z-index: -2;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   position: absolute;
   right: 0;
-  bottom: -50px;
+  bottom: -100px;
 }
 
 section:nth-child(even) .bg-pattern {
@@ -267,6 +274,66 @@ section.services .container .services-boxes .service-arrows span.active {
 
 section.services .bg-pattern {
   bottom: -120px;
+}
+
+section.complete-work {
+  margin-top: 100px;
+  padding: 100px 0;
+  background-color: #F8F8F8;
+}
+
+section.complete-work .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.complete-work .content .text {
+  max-width: 100%;
+  text-align: center;
+}
+
+section.complete-work .content .counters {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+section.complete-work .content .counters .counter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 185px;
+  height: 185px;
+  border-radius: 40px 0 40px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+          box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+}
+
+section.complete-work .content .counters .counter-box p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+section.complete-work .content .counters .counter-box span {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .active {
