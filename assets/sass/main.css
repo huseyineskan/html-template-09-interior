@@ -324,6 +324,11 @@ section.complete-work .content .counters .counter-box {
   background-color: #ffffff;
   -webkit-box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
           box-shadow: 4px 8px 20px 5px rgba(0, 0, 0, 0.14);
+  position: relative;
+}
+
+section.complete-work .content .counters .counter-box:nth-child(even) {
+  margin-top: 92.5px;
 }
 
 section.complete-work .content .counters .counter-box p {
