@@ -92,7 +92,7 @@ section{
     }
 
     .bg-pattern{
-        z-index: -2;
+        // z-index: -2;
         user-select: none;
         position: absolute;
         right: 0;
@@ -313,7 +313,6 @@ section{
                 gap: 100px;
 
                 .blog-box{
-                    z-index: 1;
                     .blog-img{
                         width: 100%;
                         position: relative;
@@ -347,6 +346,72 @@ section{
                             font-size: 30px;
                             font-weight: 600;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    &.newsletter{
+        .content{
+            max-width: 772px;
+            margin: 0 auto;
+            flex-direction: column;
+
+            h3{
+                font-size: min(4vw, 6vw, 8vw);
+                letter-spacing: 2px;
+                position: relative;
+                line-height: 80px;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 70%;
+                    background: #C4C4C4;
+                    height: 1px;
+                    bottom: 0;
+                    left: 15%;
+                }
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 28px;
+                text-align: center;
+                color: $gray-clr;
+            }
+
+            form{
+                width: 100%;
+                text-align: center;
+                position: relative;
+
+                input{
+                    border: none;
+                    outline: none;
+                    font-size: 18px;
+                    background-color: #eeeeee;
+                    color: $gray-clr;
+                    height: 50px;
+                    width: 100%;
+                    padding-left: 27px;
+                    padding-right: 180px;
+                    border-radius: 20px 0 20px;
+                    
+                }
+
+                button{
+                    border: none;
+                    position: absolute;
+                    width: 180px;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: 0;
+
+                    &:hover{
+                        cursor: pointer;
                     }
                 }
             }
