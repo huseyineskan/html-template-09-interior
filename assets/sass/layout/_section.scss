@@ -295,6 +295,63 @@ section{
             }
         }
     }
+
+    &.blog{
+        background-color: #F8F8F8;
+
+        .content{
+            flex-direction: column;
+
+            .text{
+                width: 100%;
+                text-align: center;
+            }
+
+            .blog-boxes{
+                margin-top: 50px;
+                display: flex;
+                gap: 100px;
+
+                .blog-box{
+                    z-index: 1;
+                    .blog-img{
+                        width: 100%;
+                        position: relative;
+                        display: block;
+                        border-radius: 140px 0 140px;
+                        
+                        img{
+                            width: 100%;
+                            border-radius: 140px 0 140px;
+                        }
+            
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            right: -20px;
+                            bottom: -20px;
+                            z-index: -1;
+                            width: 100%;
+                            height: 100%;
+                            border: 4px solid $main-clr;
+                            border-radius: 140px 0 140px;
+                        }
+                    }
+
+                    .blog-text{
+                        font-size: 18px;
+                        line-height: 28px;
+
+                        p.blog-name{
+                            margin: 50px 0 15px;
+                            font-size: 30px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .slide-arrows{
