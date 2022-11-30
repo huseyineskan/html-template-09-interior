@@ -422,6 +422,8 @@ section.blog .content .blog-boxes .blog-box .blog-img {
 section.blog .content .blog-boxes .blog-box .blog-img img {
   width: 100%;
   border-radius: 140px 0 140px;
+  position: relative;
+  z-index: 1;
 }
 
 section.blog .content .blog-boxes .blog-box .blog-img::before {
@@ -429,7 +431,6 @@ section.blog .content .blog-boxes .blog-box .blog-img::before {
   position: absolute;
   right: -20px;
   bottom: -20px;
-  z-index: -1;
   width: 100%;
   height: 100%;
   border: 4px solid #CAA892;
@@ -457,7 +458,7 @@ section.newsletter .content {
 }
 
 section.newsletter .content h3 {
-  font-size: 4vw;
+  font-size: 40px;
   letter-spacing: 2px;
   position: relative;
   line-height: 80px;
