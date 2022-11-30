@@ -513,6 +513,73 @@ section.newsletter .content form button:hover {
   cursor: pointer;
 }
 
+footer {
+  background-color: #F8F8F8;
+}
+
+footer .footer-cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 93px 0;
+  gap: 37px;
+}
+
+footer .footer-cols > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 40px;
+}
+
+footer .footer-cols > div h3 {
+  font-size: 24px;
+}
+
+footer .footer-cols > div a {
+  display: inline-block;
+  font-size: 18px;
+}
+
+footer .footer-cols > div:first-child p {
+  line-height: 28px;
+}
+
+footer .footer-cols > div:last-child a {
+  background-color: #D5D5D5;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 50%;
+}
+
+footer .footer-cols > div:last-child a:not(:last-child) {
+  margin-right: 8px;
+}
+
+footer .footer-cols > div:last-child a:hover {
+  background-color: #37806B;
+}
+
+footer .footer-cols > div:last-child a img {
+  width: 18px;
+}
+
+footer .copyright {
+  border-top: 1px solid #C4C4C4;
+}
+
+footer .copyright p {
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+}
+
+footer .copyright p a {
+  color: #37806B;
+}
+
 .slide-arrows {
   position: absolute;
   top: -50px;
