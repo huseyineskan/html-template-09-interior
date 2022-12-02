@@ -58,7 +58,11 @@ header .header ul li:last-child {
   margin: 0 0 0 30px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+header .header .open-menu {
+  display: none;
+}
+
+@media (max-width: 1024px) {
   header .header nav {
     opacity: 0;
     position: fixed;
@@ -88,6 +92,7 @@ header .header ul li:last-child {
   }
   header .header nav ul li:last-child {
     margin: 0;
+    margin-top: 15px;
   }
   header .header nav.menu-active {
     opacity: 1;
@@ -131,6 +136,7 @@ header .header ul li:last-child {
   header .header .close-menu {
     position: absolute;
     top: 50px;
+    left: 10px;
   }
   header .header .close-menu span:nth-child(1) {
     -webkit-transform: translate(0, 15px) rotate(-45deg);
@@ -212,6 +218,7 @@ section .content .text p.bold-text {
 section .content .image {
   width: 751px;
   max-width: 751px;
+  min-width: 50%;
   border-radius: 140px 0 140px;
   position: relative;
 }
@@ -704,7 +711,7 @@ footer .copyright p a {
   color: #ffffff !important;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .container {
     padding: 0 20px;
   }

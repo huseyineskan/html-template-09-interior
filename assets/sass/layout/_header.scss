@@ -26,10 +26,14 @@ header{
                 
             }
         }
+
+        .open-menu{
+            display: none;
+        }
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   
     header{
         .header{  
@@ -57,7 +61,8 @@ header{
 
                     li{
                         &:last-child{
-                            margin: 0;                    
+                            margin: 0;       
+                            margin-top: 15px;             
                         }
                     }
                 }
@@ -67,9 +72,7 @@ header{
                     right: 0;
                     transition: 500ms ease;
                 }
-            }
-
-            
+            }           
             
             .open-menu,
             .close-menu{
@@ -99,6 +102,7 @@ header{
             .close-menu{
                 position: absolute;
                 top: 50px;
+                left: 10px;
 
                 span{
                     &:nth-child(1){
