@@ -28,3 +28,90 @@ header{
         }
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    header{
+        .header{  
+
+            nav{
+                opacity: 0;
+                position: fixed;
+                right: -100%;
+                bottom: 0;
+                width: 400px;
+                height: 100vh;
+                background-color: $white-clr;
+                z-index: 999;
+                box-shadow: -8px 8px 20px 5px rgba(0,0,0,.14);
+                transition: 500ms ease;
+
+                ul{
+                    height: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    li:not(:last-child){
+                        padding: 20px 0;
+                    }
+
+                    li{
+                        &:last-child{
+                            margin: 0;                    
+                        }
+                    }
+                }
+
+                &.menu-active{
+                    opacity: 1;
+                    right: 0;
+                    transition: 500ms ease;
+                }
+            }
+
+            
+            
+            .open-menu,
+            .close-menu{
+                width: 35px;
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                span{
+                    width: 100%;
+                    background-color: $main-clr;
+                    height: 5px;
+                    border-radius: 10px 0 0 10px;
+
+                    &:nth-child(2){
+                        width: 80%;
+                    }
+                }
+            }
+
+            .close-menu{
+                position: absolute;
+                top: 50px;
+
+                span{
+                    &:nth-child(1){
+                        transform: translate(0, 15px) rotate(-45deg);
+                    }
+
+                    &:nth-child(2){
+                        width: 100%;
+                        transform: translate(0, -10px) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+    
+}

@@ -58,6 +58,91 @@ header .header ul li:last-child {
   margin: 0 0 0 30px;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .header nav {
+    opacity: 0;
+    position: fixed;
+    right: -100%;
+    bottom: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 999;
+    -webkit-box-shadow: -8px 8px 20px 5px rgba(0, 0, 0, 0.14);
+            box-shadow: -8px 8px 20px 5px rgba(0, 0, 0, 0.14);
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+  header .header nav ul {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header nav ul li:not(:last-child) {
+    padding: 20px 0;
+  }
+  header .header nav ul li:last-child {
+    margin: 0;
+  }
+  header .header nav.menu-active {
+    opacity: 1;
+    right: 0;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
+  }
+  header .header .open-menu,
+  header .header .close-menu {
+    width: 35px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  header .header .open-menu:hover,
+  header .header .close-menu:hover {
+    cursor: pointer;
+  }
+  header .header .open-menu span,
+  header .header .close-menu span {
+    width: 100%;
+    background-color: #CAA892;
+    height: 5px;
+    border-radius: 10px 0 0 10px;
+  }
+  header .header .open-menu span:nth-child(2),
+  header .header .close-menu span:nth-child(2) {
+    width: 80%;
+  }
+  header .header .close-menu {
+    position: absolute;
+    top: 50px;
+  }
+  header .header .close-menu span:nth-child(1) {
+    -webkit-transform: translate(0, 15px) rotate(-45deg);
+            transform: translate(0, 15px) rotate(-45deg);
+  }
+  header .header .close-menu span:nth-child(2) {
+    width: 100%;
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+            transform: translate(0, -10px) rotate(45deg);
+  }
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -617,6 +702,12 @@ footer .copyright p a {
 .slide-arrows span.arrow.active {
   background-color: #37806B;
   color: #ffffff !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .active {
