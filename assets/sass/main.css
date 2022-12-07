@@ -725,12 +725,6 @@ footer .copyright p a {
         -ms-flex-flow: column;
             flex-flow: column;
   }
-  section .content:nth-child(odd) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
   section .content .text {
     max-width: 100%;
     margin-top: 20px;
@@ -749,6 +743,12 @@ footer .copyright p a {
   section .content .image {
     width: 90%;
   }
+  section.hero .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   section.services {
     padding: 0;
   }
@@ -760,6 +760,12 @@ footer .copyright p a {
     line-height: 10vw;
   }
   section.services .container .services-boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.aboutus .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
