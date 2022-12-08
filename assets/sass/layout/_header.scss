@@ -68,6 +68,7 @@ header{
                 }
 
                 &.menu-active{
+                    width: 100%;
                     opacity: 1;
                     right: 0;
                     transition: 500ms ease;
